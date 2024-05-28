@@ -1,8 +1,12 @@
+@use 'var';
+
 .hero {
-    padding-block: 2rem;
-    background-image: url(../images/fundo.png);
+    padding-block: 5rem;
+    background-image: url(../images/aniversario.png);
+    background-color: var.$clr-primary;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     position: relative;
 
     .container {
@@ -21,7 +25,6 @@
 
 
     &__text {
-        color: white;
         padding-block: 5rem;
         font-size: 40px;
         line-height: 56px;

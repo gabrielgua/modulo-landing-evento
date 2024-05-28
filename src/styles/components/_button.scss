@@ -1,0 +1,22 @@
+@use '../var';
+
+.button {
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 2rem;
+
+    &--primary {
+        color: white;
+        background-color: var.$clr-btn-primary;
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+        width: 100%;
+    }
+
+   
+}

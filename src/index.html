@@ -3,22 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EBAC Tech Talks</title>
+    <title>Aniverário</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles/styles.scss">
 </head>
 <body>
     <header class="hero">
         <div class="container">
-            <img class="hero__logo" src="images/ebac_logo.svg" alt="logo">
-            <p class="hero__text">O maior evento de tecnologia do Brasil começa em 10d 12h 20m 15s</p>
+            <p class="hero__text">
+                Aniverário do  Gabriel acontecerá em <br>
+                <span id="counter" class="hero__counter hero__text"></span> 🎉
+            </p>
+            <span ></span>
+            <div class="info">
+                <ul class="info__infos">
+                    <li class="info__infos__item">
+                        <b class="info__infos__item__title">Localização</b>
+                        Minha casa.
+                    </li>
+                    <li class="info__infos__item">
+                        <b class="info__infos__item__title">Preço</b>
+                        Tudo por conta da casa.
+                    </li>
+                    <li class="info__infos__item">
+                        <b class="info__infos__item__title">Quando</b>
+                        30/06/2024 às 19hrs
+                    </li>
+                </ul>
+                <button class="button button--primary">
+                    Quero participar!
+                </button>
+            </div> 
         </div>
     </header>
 
+    <section class="content-wrapper">
+        <div class="container">
+            <div data-aos="fade-right" class="content">
+                <img  class="content__img" src="images/cake.png" alt="ui-ux">
+                <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, esse nesciunt sapiente sequi pariatur ex, ea nulla sint aliquid illo eius placeat voluptatum soluta facilis fuga, repellat totam fugiat impedit?</p>
+            </div>
+            <div data-aos="fade-right" class="content">
+                <img  class="content__img" src="images/cake.png" alt="ui-ux">
+                <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, esse nesciunt sapiente sequi pariatur ex, ea nulla sint aliquid illo eius placeat voluptatum soluta facilis fuga, repellat totam fugiat impedit?</p>
+            </div>
+            <div data-aos="fade-right" class="content">
+                <img  class="content__img" src="images/cake.png" alt="ui-ux">
+                <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, esse nesciunt sapiente sequi pariatur ex, ea nulla sint aliquid illo eius placeat voluptatum soluta facilis fuga, repellat totam fugiat impedit?</p>
+            </div>
+            <div data-aos="fade-right" class="content">
+                <img  class="content__img" src="images/cake.png" alt="ui-ux">
+                <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, esse nesciunt sapiente sequi pariatur ex, ea nulla sint aliquid illo eius placeat voluptatum soluta facilis fuga, repellat totam fugiat impedit?</p>
+            </div>
+            <div data-aos="fade-right" class="content">
+                <img  class="content__img" src="images/cake.png" alt="ui-ux">
+                <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, esse nesciunt sapiente sequi pariatur ex, ea nulla sint aliquid illo eius placeat voluptatum soluta facilis fuga, repellat totam fugiat impedit?</p>
+            </div>
+        </div>
+    </section>
 
+    
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

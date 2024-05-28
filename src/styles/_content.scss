@@ -1,0 +1,21 @@
+@use 'var';
+
+.content-wrapper {
+    background-image: linear-gradient(180deg, #F4DFC7, white);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__img {
+        width: 100%;
+        display: block;
+        max-width: 350px;
+    }
+
+    &__text {
+        color: var.$clr-text-secondary;
+    }
+}
