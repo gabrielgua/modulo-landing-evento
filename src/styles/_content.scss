@@ -2,20 +2,31 @@
 
 .content-wrapper {
     background-image: linear-gradient(180deg, #F4DFC7, white);
-}
+    padding-block: 5rem;
+}   
 
 .content {
+    gap: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 5rem;
+
+    &--mirrored {
+        flex-direction: row-reverse;
+    }
 
     &__img {
         width: 100%;
         display: block;
-        max-width: 350px;
+        max-width: 15rem;
     }
 
     &__text {
         color: var.$clr-text-secondary;
+    }
+
+    @media (max-width: 425px) {
+        flex-direction: column;
     }
 }

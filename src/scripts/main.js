@@ -1,10 +1,11 @@
-AOS.init();
+AOS.init({ once: true });
 
 const hoursCount = setInterval(function() {
     const now = new Date();
     const nowTimestamp = now.getTime();
+    const currentYear = now.getFullYear();
 
-    const eventDate = new Date(`Jun 30, ${now.getFullYear()} 19:00:00`);
+    const eventDate = new Date(`Jun 30, ${currentYear} 19:00:00`);
     const eventTimestamp = eventDate.getTime();
 
     const timeUntilEvent = eventTimestamp - nowTimestamp;
@@ -21,8 +22,5 @@ const hoursCount = setInterval(function() {
 
 
     document.getElementById('counter').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-
-
-    
 }, 1000);
 
